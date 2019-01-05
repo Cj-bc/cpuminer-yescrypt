@@ -117,7 +117,7 @@ else
 fi
 
 LIBCURL_CHECK_CONFIG(, 7.15.2, ,
-  [AC_MSG_ERROR([Missing required libcurl >= 7.15.2])])
+  AC_MSG_ERROR([Missing required libcurl >= 7.15.2]))
 
 AC_SUBST(JANSSON_LIBS)
 AC_SUBST(PTHREAD_FLAGS)
